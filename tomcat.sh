@@ -15,7 +15,7 @@ sudo tar xf /tmp/apache-tomcat-9.0.80.tar.gz -C /opt/tomcat
 sudo ln -s /opt/tomcat/apache-tomcat-9.0.80 /opt/tomcat/latest
 
 # Set ownership and permissions
-sudo chown -R tomcat: /opt/tomcat/latest
+sudo chown -R tomcat:/opt/tomcat/latest
 sudo chmod +x /opt/tomcat/latest/bin/*.sh
 sudo chmod +x /opt/tomcat/latest/bin/startup.sh
 
