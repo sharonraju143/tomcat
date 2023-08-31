@@ -14,15 +14,15 @@ wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.80.t
 # Extract Tomcat archive
 tar -xvzf apache-tomcat-9.0.80.tar.gz
 #changed directory
-cd ./apache-tomcat-9.0.80/bin
-chmod +x ./apache-tomcat-9.0.80/bin/startup.sh 
-chmod +x ./apache-tomcat-9.0.80/bin/shutdown.sh
+#cd ./apache-tomcat-9.0.80/bin
+chmod +x ~/tomcat/apache-tomcat-9.0.80/bin/startup.sh
+chmod +x ~/tomcat/apache-tomcat-9.0.80/bin/shutdown.sh
 #triggered script
-./startup.sh
+bash ~/tomcat/apache-tomcat-9.0.80/bin/startup.sh
 # service has benn stopped
-./shutdown.sh
+bash ~/tomcat/apache-tomcat-9.0.80/bin/shutdown.sh
 # service has been started
-./startup.sh
+bash ~/tomcat/apache-tomcat-9.0.80/bin/startup.sh
 echo "$?"
 
 
