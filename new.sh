@@ -18,8 +18,12 @@ cd ./apache-tomcat-9.0.80/bin
 chmod +x ./apache-tomcat-9.0.80/bin/startup.sh 
 chmod +x ./apache-tomcat-9.0.80/bin/shutdown.sh
 #triggered script
-./shutdown.sh
 ./startup.sh
+# service has benn stopped
+./shutdown.sh
+# service has been started
+./startup.sh
+
 
 # Display instructions for accessing Tomcat
 echo "Tomcat 9 has been installed and started."
