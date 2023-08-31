@@ -5,8 +5,8 @@ sudo apt-get update
 sudo apt-get install -y default-jdk
 
 # Create a tomcat user and group
-groupadd tomcat
-useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+sudo groupadd tomcat
+sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 
 # Download and extract Tomcat
 TOMCAT_VERSION="9.0.80"  # Update to the desired version
@@ -14,8 +14,8 @@ wget https://dlcdn.apache.org/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin/apache-tomc
 tar xf /tmp/apache-tomcat-${TOMCAT_VERSION}.tar.gz -C /opt/tomcat
 
 # Set proper ownership and permissions
-chown -R tomcat:tomcat /opt/tomcat/apache-tomcat-${TOMCAT_VERSION}
-chmod +x /opt/tomcat/apache-tomcat-${TOMCAT_VERSION}/bin/*.sh
+sudo chown -R tomcat:tomcat /opt/tomcat/apache-tomcat-${TOMCAT_VERSION}
+sudo chmod +x /opt/tomcat/apache-tomcat-${TOMCAT_VERSION}/bin/*.sh
 
 # Create a systemd service file
 cat << EOF > /etc/systemd/system/tomcat.service
