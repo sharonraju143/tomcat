@@ -8,7 +8,7 @@ sudo apt install default-jdk -y
 sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
 
 # Download Tomcat (adjust the version as needed)
-wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.54.tar.gz -P /tmp
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.80.tar.gz -P /tmp
 
 # Extract and move Tomcat files
 sudo tar xf /tmp/apache-tomcat-9.0.80.tar.gz -C /opt/tomcat
