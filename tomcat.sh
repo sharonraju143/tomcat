@@ -8,11 +8,11 @@ sudo apt install default-jdk -y
 sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
 
 # Download Tomcat (adjust the version as needed)
-wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.54/bin/apache-tomcat-9.0.54.tar.gz -P /tmp
+wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.54.tar.gz -P /tmp
 
 # Extract and move Tomcat files
-sudo tar xf /tmp/apache-tomcat-9.0.54.tar.gz -C /opt/tomcat
-sudo ln -s /opt/tomcat/apache-tomcat-9.0.54 /opt/tomcat/latest
+sudo tar xf /tmp/apache-tomcat-9.0.80.tar.gz -C /opt/tomcat
+sudo ln -s /opt/tomcat/apache-tomcat-9.0.80 /opt/tomcat/latest
 
 # Set ownership and permissions
 sudo chown -R tomcat: /opt/tomcat/latest
@@ -47,4 +47,4 @@ WantedBy=multi-user.target" | sudo tee /etc/systemd/system/tomcat.service
 # Reload systemd and start Tomcat service
 sudo systemctl daemon-reload
 sudo systemctl start tomcat
-sudo systemctl enable tomcat convert this to inline remote exec
+sudo systemctl enable tomcat
