@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Install necessary packages
-apt-get update
-apt-get install -y default-jdk
+sudo apt-get update
+sudo apt-get install -y default-jdk
 
 # Create a tomcat user and group
 groupadd tomcat
