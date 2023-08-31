@@ -23,6 +23,7 @@ chmod +x ./apache-tomcat-9.0.80/bin/shutdown.sh
 ./shutdown.sh
 # service has been started
 ./startup.sh
+echo "$?"
 
 
 # Display instructions for accessing Tomcat
